@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { Formik } from 'formik'
+import styled from 'styled-components';
+
+const Title = styled.h1`
+    text-align: center;
+    color: red;
+`;
+
+const TitleWrapper = styled.div`
+    // display: flex;
+    // justify-content: center;
+    padding: 20px;
+    background: papayawhip;
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <TitleWrapper>
+            <Title> Just a simple login app </Title>
+        </TitleWrapper>
     );
   }
 }
